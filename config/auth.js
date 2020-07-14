@@ -12,7 +12,7 @@ module.exports = {
     model: 'App/Models/User',
     scheme: 'session',
     uid: 'username',
-    password: 'cpf'
+    password: 'password'
   },
 
   basic: {
@@ -20,7 +20,7 @@ module.exports = {
     model: 'App/Models/User',
     scheme: 'basic',
     uid: 'username',
-    password: 'cpf'
+    password: 'password'
   },
 
   jwt: {
@@ -28,7 +28,7 @@ module.exports = {
     model: 'App/Models/User',
     scheme: 'jwt',
     uid: 'username', // -> aqui
-    password: 'cpf', // -> aqui
+    password: 'password', // -> aqui
     options: {
       secret: Env.get('APP_KEY')
     }
@@ -39,6 +39,6 @@ module.exports = {
     model: 'App/Models/User',
     scheme: 'api',
     uid: 'username',
-    password: 'cpf'
+    password: 'password'
   }
 }

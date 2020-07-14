@@ -3,6 +3,7 @@ const Route = use('Route')
 
 Route.group(() => {
   Route.post('/auth/register', 'UserController.register')
+  Route.post('/auth/find', 'UserController.find')
   Route.get('/auth/list', 'UserController.index')
 
   Route.get('/auth/list/:id', 'UserController.show')
